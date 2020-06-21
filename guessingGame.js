@@ -2,6 +2,8 @@
  * a response depending on if the number entered into the function matched the
  * randomly picked number in guessingGame.
  */
+
+ /**TODO: add typescript to ensure a number is guessed */
 function guessingGame() {
   let array99 = [...Array(99).keys()]
   let randomNum = Math.floor(Math.random() * array99.length);
