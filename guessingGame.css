@@ -104,3 +104,20 @@ label {
     transform: translate(0px)
   }
 }
+
+@media only screen and (max-width: 500px){
+
+  #progressBar {
+    width: 396px;
+    height: 20px;
+  }
+
+  .greenSquare {
+    width: 4px;
+  }
+
+  #winner-image {
+    width: 300px;
+  }
+
+}
