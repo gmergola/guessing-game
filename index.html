@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>guessing game</title>
+  <link rel="stylesheet" href="guessingGame.css">
+</head>
+
+<body>
+  <h1 class="title">Guessing Game!</h1>
+
+  <button id="start-game">Start a new game</button>
+  <br>
+  <div id="container">
+    <form id="the-form">
+      <div>
+        <label for="user-guess">Guess a number between 1-100: </label>
+      </div>
+      <input id="user-guess" type="text" name="user-guess">
+      <button id="guess-button">Guess</button>
+    </form>
+    <div id="progressBar"></div>
+    <div id="guess"></div>
+    <img id="winner-image" src="https://media3.giphy.com/media/ToMjGpyO2OVfPLpoxu8/giphy.gif?cid=ecf05e4760523d323045ed3a501d84607112c1fec03d3831&rid=giphy.gif" alt="winner">
+    <br>
+    <br>
+    <div id="guesses-log">Your recorded Guesses: </div>
+    <div id="recorded-guesses"></div>
+  </div>
+  <script src="guessingGame.js"></script>
+</body>
+
+</html>

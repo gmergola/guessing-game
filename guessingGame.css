@@ -1,0 +1,106 @@
+body{
+  text-align: center;
+  font-family: monospace;
+  background-color: lightgray;
+}
+
+#winner-image {
+  display: none;
+  margin: auto;
+  border-radius: 35px;
+}
+
+#container {
+  display: none;
+  animation-name: moveLeftRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.title {
+  font-size: 50px;
+}
+
+#start-game {
+  font-family: monospace;
+  height: 50px;
+  width: 300px;
+  border-radius: 15px;
+  border: none;
+  background-color: lightslategray;
+  color: white;
+  font-size: 20px;
+}
+
+#start-game:hover {
+  opacity: 0.5;
+}
+
+#user-guess {
+  height: 40px;
+  width: 150px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+label {
+  font-size: 20px;
+}
+
+#the-form {
+  margin-top: 20px;
+}
+
+#guess-button {
+  height: 35px;
+  width: 65px;
+  background-color: rgb(79, 118, 156);
+  border-radius: 5px;
+  font-family: monospace;
+  border: none;
+  color: white;
+}
+
+#guesses-log {
+  font-size: 15px;
+}
+
+#recorded-guesses {
+  font-size: 15px;
+}
+
+#guess {
+  font-size: 20px;
+  color: darkslateblue;
+  margin-bottom: 10px;
+}
+
+#progressBar {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid green;
+  width: 594px;
+  height: 20px;
+}
+
+.greenSquare {
+  background-color: green;
+  width: 6px;
+  height: 20px;
+  display: inline;
+  float: left;
+  background-color: green;
+  color: green;
+}
+
+@keyframes moveLeftRight {
+  from {
+    transform: translateX(-1000px);
+  }
+
+  to {
+    transform: translate(0px)
+  }
+}
